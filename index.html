@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  <!-- Site made with Mobirise Website Builder v4.10.15, index.html -->
+  <!-- Site made with Mobirise Website Builder v4.10.15, https://mobirise.com -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/mobirise/css/style.css">
+  <link rel="stylesheet" href="assets/dropdown-menu/style.css">
   <link rel="stylesheet" href="assets/mobirise-slider/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
@@ -21,56 +22,59 @@
   
 </head>
 <body>
-  <section class="mbr-navbar mbr-navbar--freeze mbr-navbar--absolute mbr-navbar--sticky mbr-navbar--auto-collapse mbr-navbar--transparent" id="menu-1" data-rv-view="0">
-    <div class="mbr-navbar__section mbr-section">
-        <div class="mbr-section__container container">
-            <div class="mbr-navbar__container">
-                <div class="mbr-navbar__column mbr-navbar__column--s mbr-navbar__brand">
-                    <span class="mbr-navbar__brand-link mbr-brand mbr-brand--inline">
-                        
-                        <span class="mbr-brand__name"><a class="mbr-brand__name text-white" href="index.html">Ya NgeKost</a></span>
-                    </span>
-                </div>
-                <div class="mbr-navbar__hamburger mbr-hamburger"><span class="mbr-hamburger__line"></span></div>
-                <div class="mbr-navbar__column mbr-navbar__menu">
-                    <nav class="mbr-navbar__menu-box mbr-navbar__menu-box--inline-right">
-                        <div class="mbr-navbar__column">
-                            <ul class="mbr-navbar__items mbr-navbar__items--right float-left mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-decorator mbr-buttons--active"><li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html">HOME</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html">Cari Kost</a></li>
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__link btn text-white" href="index.html">FAQ</a></li></ul>                            
-                            <ul class="mbr-navbar__items mbr-navbar__items--right mbr-buttons mbr-buttons--freeze mbr-buttons--right btn-inverse mbr-buttons--active">
-                                <li class="mbr-navbar__item"><a class="mbr-buttons__btn btn btn-default" href="index.html">Daftar</a></li>
-                            </ul>  
-                            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar"></ul> 
-                            <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="https://mobirise.com/" aria-expanded="true">Help</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="http://forums.mobirise.com/"> </a>
-                                    <a class="dropdown-item" ></a><div class="form-popup" id="myForm">
-                                        <form action="proses_login.php" class="form-container" method="post">
-                                          <h5>Login</h5>
-                                      
-                                          <label for="Username"><b>Username</b></label>
-                                          <input type="text" placeholder="Enter Username" name="Username" required>
-                                      
-                                          <label for="psw"><b>Password</b></label>
-                                          <input type="password" placeholder="Enter Password" name="psw" required>
-                                      
-                                          <button type="masuk" class="btn">Login</button>
-                                          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                        </form>
-                                      </div></a>
-                                    
-                                </div>
-                            </li>                       
-                           
-                        </div>
-                    </nav>
-                </div>
+  <section id="dropdown-menu-i" data-rv-view="53">
+
+    <nav class="navbar navbar-dropdown transparent navbar-fixed-top bg-color">
+
+        <div class="container">
+
+            <div class="navbar-brand">
+                <a href="https://mobirise.com" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
+                <a class="text-white" href="#">Ya NgeKost</a>
             </div>
+
+            <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar">
+                <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+                <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="true">Daftar</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="register01.php">Pemilik</a>
+                        <a class="dropdown-item" href="#">Penyewa</a>
+                    <div class="dropdown">
+                        <a class="dropdown-item dropdown-toggle" data-toggle="dropdown-submenu" href="#">Lainnya</a>
+                        <div class="dropdown-menu dropdown-submenu">
+                            <a class="dropdown-item" href="#">Persyaratan Pemilik</a>
+                            <a class="dropdown-item" href="#">Persyaratan Penyewa</a>
+                            <a class="dropdown-item" href="#">Ketentuan</a>
+                            <a class="dropdown-item" href="#">--------</a>
+                            <a class="dropdown-item" href="#">--------</a>
+                            <a class="dropdown-item" href="#">--------</a>
+                            <a class="dropdown-item" href="#">--------</a>
+                            <a class="dropdown-item" href="#">--------</a>
+                        </div></div><a class="dropdown-item" href="#">Pusat Bantuan</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">Login</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="userlte/login.php">Pemilik</a>
+                        <a class="dropdown-item" href="#">Penyewa</a>                        
+                    </div>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link btn btn-default btn-default-outline" href="#">CARI KOST SEKARANG</a>
+                </li></ul>
+
         </div>
-    </div>
+
+    </nav>
+
 </section>
 
-<section class="engine"><a href=" ">free bootstrap theme</a></section><section class="mbr-slider mbr-section mbr-section--no-padding carousel slide mbr-after-navbar" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-7" data-rv-view="2" style="background-color: rgb(255, 255, 255);">
+<section class="engine"><a href="https://mobirise.info/j">website templates</a></section><section class="mbr-slider mbr-section mbr-section--no-padding carousel slide" data-ride="carousel" data-wrap="true" data-interval="5000" id="slider-7" data-rv-view="29" style="background-color: rgb(255, 255, 255);">
     <div class="mbr-section__container">
         <div>
             <ol class="carousel-indicators">
@@ -78,7 +82,7 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height active" style="background-image: url(assets/images/slide1.jpg);">
-                    <div class="mbr-box__magnet mbr-box__magnet--center-right mbr-box__magnet--sm-padding">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-right mbr-box__magnet--sm-padding mbr-after-navbar">
                                             
                         <div class=" container">
                             
@@ -90,15 +94,15 @@
 
                                     <p class="mbr-hero__subtext">Tapi binggung?<br><br></p>
                                 </div>
-                                <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--right"><a class="mbr-buttons__btn btn btn-lg btn-danger" href="index.html">Cari Kost</a> </div>
+                                <div class="mbr-buttons btn-inverse mbr-buttons--left mbr-buttons--right"><a class="mbr-buttons__btn btn btn-lg btn-danger" href="https://mobirise.com">Cari Kost</a> </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><div class="mbr-box mbr-section mbr-section--relative mbr-section--fixed-size mbr-section--bg-adapted item dark center mbr-section--full-height" style="background-image: url(assets/images/slide2.jpg);">
-                    <div class="mbr-box__magnet mbr-box__magnet--center-left mbr-box__magnet--sm-padding">
+                    <div class="mbr-box__magnet mbr-box__magnet--center-left mbr-box__magnet--sm-padding mbr-after-navbar">
                                             
-                        <div class="container">
+                        <div class=" container">
                             
                             <div class="row">
                                 <div class=" col-md-offset-1 col-md-6">  
@@ -108,7 +112,7 @@
 
                                     <p class="mbr-hero__subtext">Gratis Simple dan cepat</p>
                                 </div>
-                                <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg btn-danger" href="index.html">Daftar</a> </div>
+                                <div class="mbr-buttons btn-inverse mbr-buttons--left"><a class="mbr-buttons__btn btn btn-lg btn-danger" href="https://mobirise.com">Daftar</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +132,7 @@
     </div>
 </section>
 
-<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form2-9" data-rv-view="11" style="background-color: rgb(124, 112, 107);">
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form2-9" data-rv-view="38" style="background-color: rgb(124, 112, 107);">
     
     <div class="mbr-section__container mbr-section__container--sm-padding container" style="padding-top: 27.2px; padding-bottom: 27.2px;">
         <div class="row">
@@ -141,8 +145,8 @@
                         <div data-form-alert="true">
                             <div class="hide" data-form-alert-success="true"></div>
                         </div>
-                        <form class="mbr-form" action="index.html/" method="post" data-form-title="Cari Kost&amp;nbsp;">
-                            <input type="hidden" value="Zu+w5s6xnW8Syjh+gG2olgrs9fUcOcAbvZsQ9PPRvhzim+QzmGilGx6Qw09omochILwHwtr4sIOElSA1Bd/Ymn3GFeu5zGzlm243dxfXwTf44LP4YFJHftCaOBWWx2ju" data-form-email="true">
+                        <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Cari Kost&amp;nbsp;">
+                            <input type="hidden" value="wrHoCDP4BwIdAfATOj9V0xkfQCFdAKdsKN7zi8+lG3dWDB1gV+fEW/d9Gt9ezad4zPToOd+Ufmx1t7WCS01fzPvr23aOvsdjLa/NlXNavBLUwHSB5vTX+5us9qLhJUvp" data-form-email="true">
                             <div class="mbr-form__left">
                                 <input type="email" class="form-control" name="email" required="" placeholder="Masukan Lokasi " data-form-field="Email">
                             </div>
@@ -156,7 +160,7 @@
     </div>
 </section>
 
-<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-8" data-rv-view="17" style="background-color: rgb(255, 255, 255);">
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-8" data-rv-view="44" style="background-color: rgb(255, 255, 255);">
     
     
     <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
@@ -176,7 +180,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last" style="padding-bottom: 93px;">
-                    <div class="mbr-buttons mbr-buttons--center"><a href="index.html" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
+                    <div class="mbr-buttons mbr-buttons--center"><a href="https://mobirise.com" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
                 </div>
             </div>
             <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
@@ -194,7 +198,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last" style="padding-bottom: 93px;">
-                    <div class="mbr-buttons mbr-buttons--center"><a href="index.html" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
+                    <div class="mbr-buttons mbr-buttons--center"><a href="https://mobirise.com" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
                 </div>
             </div>
             <div class="clearfix visible-sm-block"></div>
@@ -213,7 +217,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last" style="padding-bottom: 93px;">
-                    <div class="mbr-buttons mbr-buttons--center"><a href="index.html" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
+                    <div class="mbr-buttons mbr-buttons--center"><a href="https://mobirise.com" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
                 </div>
             </div>
             
@@ -232,7 +236,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last" style="padding-bottom: 93px;">
-                    <div class="mbr-buttons mbr-buttons--center"><a href="index.html" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
+                    <div class="mbr-buttons mbr-buttons--center"><a href="https://mobirise.com" class="mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default">Lainnya</a></div>
                 </div>
             </div>
             
@@ -242,12 +246,12 @@
     </div>
 </section>
 
-<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts1-3" data-rv-view="20" style="background-color: rgb(60, 60, 60);">
+<section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="contacts1-3" data-rv-view="47" style="background-color: rgb(60, 60, 60);">
     
     <div class="mbr-section__container container">
         <div class="mbr-contacts mbr-contacts--wysiwyg row" style="padding-top: 45px; padding-bottom: 45px;">
             <div class="col-sm-4">
-                <div><a href="index.html" class="mbri-globe mbr-iconfont mbr-iconfont-contacts1"></a></div>
+                <div><a href="https://mobirise.com" class="mbri-globe mbr-iconfont mbr-iconfont-contacts1"></a></div>
             </div>
             <div class="col-sm-8">
                 <div class="row">
@@ -261,19 +265,19 @@ Jember</p>
 Email: ulala@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;<br>
 Phone: 081333693785<br><br></p><p></p>
                     </div>
-                    <div class="col-sm-4"><p class="mbr-contacts__text"><strong>LINKS</strong></p><ul class="mbr-contacts__list"><li><a class="mbr-contacts__link text-gray" href="index.html/">F</a>acebook</li><li><a class="mbr-contacts__link text-gray" href="index.html/mobirise-free-win.zip">T</a>witter</li><li>Discord</li></ul></div>
+                    <div class="col-sm-4"><p class="mbr-contacts__text"><strong>LINKS</strong></p><ul class="mbr-contacts__list"><li><a class="mbr-contacts__link text-gray" href="https://mobirise.com/">F</a>acebook</li><li><a class="mbr-contacts__link text-gray" href="https://mobirise.com/mobirise-free-win.zip">T</a>witter</li><li>Discord</li></ul></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-4" data-rv-view="22" style="background-color: rgb(68, 68, 68);">
+<footer class="mbr-section mbr-section--relative mbr-section--fixed-size" id="footer1-4" data-rv-view="49" style="background-color: rgb(68, 68, 68);">
     
     <div class="mbr-section__container container">
         <div class="mbr-footer mbr-footer--wysiwyg row" style="padding-top: 36.9px; padding-bottom: 36.9px;">
             <div class="col-sm-12">
-                <p class="mbr-footer__copyright">Copyright (c) 2015 Company Name. <a class="mbr-footer__link text-gray" href="index.html/">Terms of Use</a>  | <a class="mbr-footer__link text-gray" href="index.html/">Privacy Policy</a></p>
+                <p class="mbr-footer__copyright">Copyright (c) 2015 Company Name. <a class="mbr-footer__link text-gray" href="https://mobirise.com/">Terms of Use</a>  | <a class="mbr-footer__link text-gray" href="https://mobirise.com/">Privacy Policy</a></p>
             </div>
         </div>
     </div>
@@ -288,6 +292,7 @@ Phone: 081333693785<br><br></p><p></p>
     <script src="assets/jquery-placeholder/jquery.placeholder.min.js"></script>
   <![endif]-->
   <script src="assets/mobirise/js/script.js"></script>
+  <script src="assets/dropdown-menu/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
   
   
