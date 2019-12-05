@@ -19,7 +19,7 @@ if($cek > 0){
 	$_SESSION['username'] = $username;
 	$_SESSION['status'] = "login";
 	echo $session['username'];
-	header("location:index.php");
+	header("location:../index.php?st=1");
 }else{
 	header("location:login.php?pesan=gagal");
 }

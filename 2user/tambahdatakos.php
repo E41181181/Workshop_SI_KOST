@@ -1,10 +1,10 @@
 <?php 
 // koneksi database
 include 'config.php';
+session_start();
  
 // menangkap data yang di kirim dari form
-session_start();
-
+$idkost = $_POST['idkost'];
 $username = $_SESSION['username'];
 $namakost = $_POST['namakost'];
 $alamatkostjalan = $_POST['alamatkostjalan'];
@@ -29,9 +29,10 @@ if (isset($_POST['save'])){
 
 // mengalihkan halaman kembali ke index.php
 //header("location:general_2.php");
-mysqli_query($koneksi,"INSERT INTO tb_datakos VALUES ('', '$username', '$namakost', '$alamatkostjalan', '$alamatkostkec', '$alamatkostkab', '$alamatkostket', '$jeniskost', '$fasilitaskos', '$fileName', '$jumlahkamar')");
+mysqli_query($koneksi,"INSERT INTO tb_datakos VALUES ('$idkost', '$username', '$namakost', '$alamatkostjalan', '$alamatkostkec', '$alamatkostkab', '$alamatkostket', '$jeniskost', '$fasilitaskos', '$fileName', '$jumlahkamar')");
 move_uploaded_file($_FILES['fotokos']['tmp_name'], "../aset_foto/".$_FILES['fotokos']['name']);
-     echo"<script>alert('Gambar Berhasil diupload !');</script>"; 
+     echo"<script>alert('Gambar Berhasil diupload !');</script>";
+     header("location:general_2_1.php");
     } 
 
 

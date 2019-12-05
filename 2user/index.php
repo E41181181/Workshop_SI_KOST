@@ -37,8 +37,11 @@ include_once ('header.php');
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
-              <div class="inner">
-                <h3>10</h3>
+              <div class="inner"><?php include_once 'config.php';
+              $result = mysqli_query($koneksi, "SELECT * FROM TB_PEMILIK");
+              $count = mysqli_num_rows($result);
+              ?>
+                <h3><?php echo $count; ?></h3>
 
                 <p>User Terdaftar</p>
               </div>
@@ -75,7 +78,7 @@ include_once ('header.php');
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="general.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="general_1.php" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

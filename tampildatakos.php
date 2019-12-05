@@ -11,7 +11,7 @@ if (!$query) {
 
 echo '<table>
 		<thead>
-			<tr>
+			 <tr>
 				<th>No Kost</th>
 				<th>Pemilik</th>
                 <th>Nama Kost</th>

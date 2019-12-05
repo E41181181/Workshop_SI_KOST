@@ -38,9 +38,11 @@ include_once ('header.php');
               <!-- /.card-header -->
               <!-- form start -->
               <form role="form" method="post" enctype="multipart/form-data" action="tambahdatakos.php">
+              <div class="card-body">                  
                 <div class="card-body">
                   <div class="form-group">
                     <label for="namakost">Nama KOST</label>
+                    <input type="text" class="form-control" id="idkost" name="idkost" placeholder=" hmmmmm">
                     <input type="text" class="form-control" id="namakost" name="namakost" placeholder="Masukan Nama Kost">
                   </div>
                   <div class="form-group">
@@ -69,10 +71,9 @@ include_once ('header.php');
                         </select>
                       </div>
                   <div class="form-group">
-                  <label>Fasilitas Kost</label>
-                    <label for="fasilitaskos"> </label>
-                    <input type="text" class="form-control" id="fasilitaskos" name="fasilitaskos" placeholder="fasilitas kos">
-                  </div>   
+                          <label>Fasilitas Kos</label>
+                          <textarea class="form-control" rows="3" name="fasilitaskos" placeholder="Fasilitas Bersama(Dapur, Jemuran, Kamar Mandi, Parkiran dll)"></textarea>
+                  </div> 
                   <div class="form-group">
                     <label for="jumlahkamar">Jumlah Kamar</label>
                     <input type="number" min="1" max="150" class="form-control" id="jumlahkamar" name="jumlahkamar" placeholder="Masukan Jumlah Kamar">

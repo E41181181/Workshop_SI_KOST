@@ -38,9 +38,11 @@ include_once ('config.php');
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-              <?php 
-              $jmlhuser = mysqli_query($koneksi,"SELECT COUNT(ID_PEMILIK) FROM tb_pemilik");?>
-                <h3><?php //echo $jmlhuser; ?></h3>
+              <?php include_once 'config.php';
+              $result = mysqli_query($koneksi, "SELECT * FROM TB_PEMILIK");
+              $count = mysqli_num_rows($result);
+              ?>
+                <h3><?php echo $count; ?></h3>
                 
 
                 <p>User Terdaftar</p>
