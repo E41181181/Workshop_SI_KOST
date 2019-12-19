@@ -11,13 +11,14 @@ $ukurankmr = $_POST['ukurankamar'];
 $faskam = $_POST['faskam'];
 $kamartersedia = $_POST['jmlkamar'];
 $ket_lainnya = $_POST['ket_lainnya'];
-mysqli_query($koneksi, "INSERT INTO tb_tipekamar VALUES ('', '$idkos', '$ukurankmr', '$faskam', '$kamartersedia', '$ket_lainnya', '')");
-
-//pembayaran
 $bayarsetiap = $_POST['bayarsetiap'];
 $dihuni = $_POST['dihuni'];
 $hargakamar = $_POST['hargakamar'];
-mysqli_query($koneksi, "INSERT INTO tb_harga VALUES ('', '10', '$bayarsetiap', '$dihuni', '$hargakamar')");
+$stkamar = $_POST['stkamar'];
+
+mysqli_query($koneksi, "INSERT INTO tb_tipekamar VALUES ('', '$idkos', '$ukurankmr', '$faskam', '$kamartersedia', '$ket_lainnya', '$stkamar', '$bayarsetiap', '$dihuni', '$hargakamar', '')");
+
+//pembayaran
 
 
  //echo $_SESSION['idkost'];

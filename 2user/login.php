@@ -29,13 +29,17 @@
 </head>
 <body class="hold-transition login-page">
 <?php 
+$belomlogin = "Harap Login Terlebih Dahulu";
+$passwordsalah = "Login gagal! Username atau Password Salah";
+$logout="Logout Berhasil";
+
 	if(isset($_GET['pesan'])){
 		if($_GET['pesan'] == "gagal"){
-			echo "Login gagal! username dan password salah!";
+			echo "<script type='text/javascript'>alert('$passwordsalah');</script>";
 		}else if($_GET['pesan'] == "logout"){
-			echo "Anda telah berhasil logout";
+			echo "<script type='text/javascript'>alert('$logout');</script>";
 		}else if($_GET['pesan'] == "belum_login"){
-			echo "Anda harus login terlebih dahulu";
+			echo "<script type='text/javascript'>alert('$belomlogin');</script>";
 		}
 	}
 	?>

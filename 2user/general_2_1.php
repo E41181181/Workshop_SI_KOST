@@ -83,6 +83,39 @@ include_once ('config.php');
                           <textarea class="form-control" rows="3" id="ket_lainnya" name="ket_lainnya" placeholder="(Peraturan atau informasi lainnya....) "></textarea>
                         </div>
                         <div class="form-group">
+                        <label>Status Kamar</label>                        
+                        <select class="form-control" id="stkamar" name="stkamar">
+                        <option>Pilih Status Kamar</option>
+                          <option>Tersedia</option>
+                          <option>Tidak Tersedia</option>                                                   
+                        </select></div>
+                        <p></p>
+                        <div class="form-group">
+                        <label>Pembayaran Setiap</label>
+                        <select class="form-control" id="bayarsetiap" name="bayarsetiap">                        
+                         <option>Perhari</option>
+                          <option>Minggu</option>
+                          <option>Bulan</option>
+                          <option>3 Bulan</option>
+                          <option>6 Bulan</option>
+                          <option>1 Bulan</option>                            
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Dihuni</label>
+                        <select class="form-control" id="dihuni" name="dihuni">                        
+                         <option>Seorang</option>
+                          <option>2 Orang</option>
+                                                    
+                        </select>
+                      </div>
+                  <div class="form-group">
+                    <label for="jumlahkamar">Harga Kamar Rp.</label>
+                    <input type="number" min="1000" max="10000000" class="form-control" id="hargakamar" name="hargakamar" placeholder="Masukan Jumlah Kamar">                  
+                  </div>
+
+
+                        <div class="form-group">
                         <label for="fotokamar">File input</label>
                         <div class="input-group">
                           <div class="custom-file">

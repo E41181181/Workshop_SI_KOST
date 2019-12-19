@@ -1,7 +1,7 @@
 <?php
 session_start();
 //koneksi ke database kita
-$koneksi= new mysqli ("localhost","root","","18nov2");
+$koneksi= new mysqli ("localhost","root","","11des");
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,7 +39,7 @@ $koneksi= new mysqli ("localhost","root","","18nov2");
 			<div class="caption">
 			
 			<p><tr><center><?php echo $detail_perkos['NAMA_KOS'];?></tr></center></p>
-			<center><img src="foto_kos/<?php echo $detail_perkos['FOTO_KOS'];?>" width="500px" height="300px"></center>
+			<center><?php echo "<img src='aset_fot/".$detail_perkos['FOTO_KOS']."' width='500px' height='300px'/>";?></center>
 			<table>
 			<tr>
 				<td><b><h3>Detail kos</b><td></h3></tr>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 //koneksi ke database kita
-$koneksi= new mysqli ("localhost","root","","18nov2");
+$koneksi= new mysqli ("localhost","root","","11des");
 ?>
 <!DOCTYPE html>
 <html>
@@ -84,8 +84,10 @@ $koneksi= new mysqli ("localhost","root","","18nov2");
                         style="width: 50%;">
                         <figure
                             class="mbr-figure mbr-figure--adapted mbr-figure--caption-inside-bottom mbr-figure--full-width">
-                            <img src="foto_kos/<?php echo $detail_perkos['FOTO_KOS'];?>" width="500px" height="300px"
-                                class="mbr-figure__img"></figure>
+                            <?php echo "<img src='aset_fot/".$detail_perkos['FOTO_KOS']."' width='500px' height='300px' class='mbr-figure__img'/>";?>
+                           
+                        </figure>
+                                
                     </div>
                     <div
                         class="mbr-box__magnet mbr-class-mbr-box__magnet--center-left col-sm-6 content-size mbr-section__right">
@@ -167,7 +169,7 @@ $koneksi= new mysqli ("localhost","root","","18nov2");
                         </table>                                                  
                         </div>                         
                     </div>
-                        <a href="sewa.php?id=<?php echo $detail_perkos['ID_KOS']; ?>" class="btn btn-Danger">Sewa</a>
+                        <a href="cbsewa.php?id=<?php echo $detail_perkos['ID_KOS']; ?>" class="btn btn-Danger">Sewa</a>
                         <a href="tanya_pemilik.php?id=<?php echo $detail_perkos['ID_KOS']; ?>" class="btn btn-info">Tanyak Pemilik</a>
                         <a href="wishlist.php?id=<?php echo $detail_perkos['ID_KOS'];?>" class="btn btn-info">Wishlist</a>
                         </div>

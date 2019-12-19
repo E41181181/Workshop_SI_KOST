@@ -32,7 +32,7 @@
 
             <div class="navbar-brand">
                 <a href="#" class="navbar-logo"><img src="assets/images/logo.png" alt="Mobirise"></a>
-                <a class="text-white" href="#">Ya NgeKost</a>
+                <a class="text-white" href="index.php">Ya NgeKost</a>
             </div>
 
             <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
@@ -40,11 +40,11 @@
             </button>
 
             <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar">
-                <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link link" href="index.php">Home</a></li>
                 <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="true"><?php echo $_SESSION['username'];?></a>                                                
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="2user/profile.php">Profil</a>
-                        <a class="dropdown-item" href="#">Kost Saya</a>
+                        <a class="dropdown-item" href="2user/contacts.php">Kost Saya</a>
                     <div class="dropdown">
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown-submenu" href="#">Lainnya</a>
                         <div class="dropdown-menu dropdown-submenu">

@@ -1,5 +1,5 @@
 <?php
-$koneksi = mysqli_connect("localhost","root","","18nov2");
+$koneksi = mysqli_connect("localhost","root","","11des");
  
 // Check connection
 if (mysqli_connect_errno()){

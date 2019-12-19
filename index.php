@@ -8,6 +8,8 @@ if(isset($_GET['st'])){
         include 'navbarAwal.php';
     }else if($_GET['st'] == "2"){
         include 'navbarAwal.php';
+    }else if($_GET['st'] == "5"){
+        include 'navbarLoginPenyewa.php';
     }
 }else include 'navbarAwal.php';
 
@@ -78,21 +80,19 @@ if(isset($_GET['st'])){
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
+                    
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
                             <h2 class="mbr-header__text">Cari Kost&nbsp;</h2>
-                        </div>
-                        <div data-form-alert="true">
-                            <div class="hide" data-form-alert-success="true"></div>
-                        </div>
-                        <form class="mbr-form" action="#" method="post" data-form-title="Cari Kost&amp;nbsp;">
-                            <input type="hidden" value="wrHoCDP4BwIdAfATOj9V0xkfQCFdAKdsKN7zi8+lG3dWDB1gV+fEW/d9Gt9ezad4zPToOd+Ufmx1t7WCS01fzPvr23aOvsdjLa/NlXNavBLUwHSB5vTX+5us9qLhJUvp" data-form-email="true">
-                            <div class="mbr-form__left">
-                                <input type="email" class="form-control" name="email" required="" placeholder="Cari" data-form-field="Email">
-                            </div>
-                            <div class="mbr-form__right mbr-buttons mbr-buttons--no-offset mbr-buttons--right"><button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger"><span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>Cari</button></div>
-                        </form>
-                    </div>
+                        </div>                        
+                        <form action="indexcari.php" method="post" >                            
+                                <input type="text" class="form-control" name="cari" placeholder="Masukan Lokasi / Jenis / Harga / Nama Kos " >                 
+                            
+                                <button type="submit" class="mbr-buttons__btn btn btn-lg btn-danger">
+                                    <div>
+                                <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>Cari</button>
+                                </div>   
+                            </form>
+                    
                 </div>
 
             </div>
@@ -104,12 +104,12 @@ if(isset($_GET['st'])){
     <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
         <div class="mbr-section__row row">
 
-        <?php $ambil=$koneksi->query("SELECT * FROM tb_datakos INNER JOIN tb_tipekamar ON tb_datakos.ID_KOS = tb_tipekamar.ID_KOS");?>
+        <?php $ambil=$koneksi->query("SELECT * FROM tb_datakos INNER JOIN tb_tipekamar ON tb_datakos.ID_KOS = tb_tipekamar.ID_KOS ORDER BY RAND()");?>
 
         <?php while($perkos= $ambil->fetch_assoc()){ ?>
             <div class="mbr-section__col col-xs-12 col-md-4 col-sm-6">
                 <div class="mbr-section__container mbr-section__container--center mbr-section__container--middle">
-                    <figure class="mbr-figure"><img src="assets/images/dijual-murah-kost-elite-dewi-sri-12-kamar-kuta-bali-badung-indonesia-600x450.jpg" class="mbr-figure__img"></figure>
+                    <figure class="mbr-figure"><?php echo "<img src='aset_fot/".$perkos['FOTO_KOS']."' width='700px' height='250px' class='mbr-figure__img'/>";?></figure>
                 </div>
                 <div class="mbr-section__container mbr-section__container--middle">
                     <div class="mbr-article mbr-article--wysiwyg">
@@ -118,7 +118,7 @@ if(isset($_GET['st'])){
                     <?php echo 'Harga : Rp.'; ?><?php echo $perkos['HARGA'];?></br>
                     <?php echo 'Alamat Kost :'; ?><?php echo $perkos['KET_ALAMAT_KOS'];?></br>
                     <?php echo 'Jenis Kost : '; ?><?php echo $perkos['JENIS_KOS'];?></br>
-                    <?php echo 'Kamar Tersedia : '; ?><?php echo $perkos['STOK_KAMAR'];?></br>
+                    <?php echo 'Kamar : '; ?><?php echo $perkos['STATUS_KAMAR'];?></br>
                                              
                     </div>
                 </div>
@@ -140,7 +140,7 @@ if(isset($_GET['st'])){
     <div class="mbr-section__container container">
         <div class="mbr-contacts mbr-contacts--wysiwyg row" style="padding-top: 45px; padding-bottom: 45px;">
             <div class="col-sm-4">
-                <div><a href="https://mobirise.com" class="mbri-globe mbr-iconfont mbr-iconfont-contacts1"></a></div>
+                <div><a href="#" class="mbri-globe mbr-iconfont mbr-iconfont-contacts1"></a></div>
             </div>
             <div class="col-sm-8">
                 <div class="row">
@@ -173,7 +173,7 @@ Phone: 081333693785<br><br></p><p></p>
 </footer>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/smooth-scroll/smooth-scroll.js"></script>
   <script src="assets/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js"></script>

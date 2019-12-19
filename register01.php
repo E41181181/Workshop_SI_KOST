@@ -34,7 +34,7 @@
                             <div class="hide" data-form-alert-success="true">Daftar Berhasil                                
                             </div>
                         </div>
-                        <form method="post" action="tambah_user.php" >
+                        <form method="post" action="tambah_user.php">
                             <input type="hidden" value="jQCgYeJ824odq/haU/Kyc/Pz2lntCtNbGH9/HVU/oytjPNL0b3iYN4PT/yBMQRLV5mKFwfvUuikKt93gPNDP5yc+GZh8vchoit6Veh4uFnR2WuL2yeHN0Vkjh7NbcXk/" data-form-email="false">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="idpemilik" placeholder="Username" >
@@ -53,6 +53,9 @@
                             </div>                            
                             <div class="form-group">
                                 <input type="text" class="form-control" name="alamatkab" placeholder="Alamat (Kabupaten) ">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="alamatket" placeholder="Alamat (Kabupaten) ">
                             </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" name="notelp" placeholder="No. Telp" >

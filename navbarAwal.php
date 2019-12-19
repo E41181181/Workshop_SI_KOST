@@ -39,11 +39,11 @@
             </button>
 
             <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar">
-                <li class="nav-item"><a class="nav-link link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link link" href="index.php">Home</a></li>
                 <li class="nav-item dropdown open"><a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="true">Daftar</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="register01.php">Pemilik</a>
-                        <a class="dropdown-item" href="#">Penyewa</a>
+                        <a class="dropdown-item" href="register01 copy.php">Penyewa</a>
                     <div class="dropdown">
                         <a class="dropdown-item dropdown-toggle" data-toggle="dropdown-submenu" href="#">Lainnya</a>
                         <div class="dropdown-menu dropdown-submenu">
@@ -62,7 +62,7 @@
                     <a class="nav-link link dropdown-toggle" data-toggle="dropdown-submenu" href="#" aria-expanded="false">Login</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="2user/login.php">Pemilik</a>
-                        <a class="dropdown-item" href="#">Penyewa</a>                        
+                        <a class="dropdown-item" href="3penyewa/login.php">Penyewa</a>                        
                     </div>
                 </li>
                 <li class="nav-item nav-btn">
